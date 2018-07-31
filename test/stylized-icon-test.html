@@ -54,8 +54,8 @@ limitations under the License.
         expect(icon).to.exist;
         expect(icon.classList.contains('active')).to.be.false;
         expect(icon.classList.contains('bigger')).to.be.false;
+        expect(icon.classList.contains('disabled')).to.be.false;
         expect(icon.classList.contains('padded')).to.be.false;
-        expect(icon.disabled).to.be.false;
         expect(icon.icon).to.equal('');
         expect(icon.title).to.equal('');
       });
@@ -74,9 +74,9 @@ limitations under the License.
           expect(icon).to.exist;
           expect(icon.classList.contains('active')).to.be.true;
           expect(icon.classList.contains('bigger')).to.be.true;
+          expect(icon.classList.contains('disabled')).to.be.true;
           expect(icon.classList.contains('padded')).to.be.true;
           expect(icon.classList.contains('testStyleClass')).to.be.true;
-          expect(icon.disabled).to.be.true;
           expect(icon.icon).to.equal('icons:polymer');
           expect(icon.title).to.equal('testText');
           done();
